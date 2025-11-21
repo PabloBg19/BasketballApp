@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_centerHorizontal="true"
+            android:background="#E4220500"
+            android:text="@string/basketabll_score"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:textSize="16sp"
+            android:gravity="center"
+            tools:context=".MainActivity"/>
+
+        <TextView
+            android:id="@+id/Local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="-4dp"
+            android:gravity="center"
+            android:text="LOCAL - VISITANTE"
+            android:textSize="30sp"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/resultadoLocal"
+            android:layout_width="134dp"
+            android:layout_height="129dp"
+            android:layout_below="@+id/Local"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="215dp"
+            android:layout_marginBottom="250dp"
+            android:text="0"
+            android:textSize="90sp"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/resultadoVisitante"
+            android:layout_width="116dp"
+            android:layout_height="129dp"
+            android:layout_below="@+id/Local"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="214dp"
+
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="250dp"
+            android:text="0"
+            android:textSize="90sp"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="336dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="293dp"
+            android:layout_toStartOf="@+id/resultadoVisitante"
+            android:layout_toEndOf="@+id/resultadoLocal"
+            android:text="-"
+            android:textSize="30sp"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_below="@+id/Local"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="455dp"
+            android:layout_marginBottom="111dp"
+            android:text="EMPATE ENTRE LOS DOS EQUIPOS"
+            android:textSize="20sp"
+            tools:context=".MainActivity"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+</layout>
