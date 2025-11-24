@@ -48,10 +48,9 @@
             android:layout_height="129dp"
             android:layout_below="@+id/Local"
             android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginStart="59dp"
             android:layout_marginTop="215dp"
-            android:layout_marginBottom="250dp"
+            android:gravity="center"
             android:text="0"
             android:textSize="90sp"
             tools:context=".MainActivity" />
@@ -62,11 +61,9 @@
             android:layout_height="129dp"
             android:layout_below="@+id/Local"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginTop="214dp"
-
             android:layout_marginEnd="43dp"
-            android:layout_marginBottom="250dp"
+            android:gravity="center"
             android:text="0"
             android:textSize="90sp"
             tools:context=".MainActivity" />
@@ -76,11 +73,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView"
-            android:layout_alignParentBottom="true"
             android:layout_marginStart="17dp"
             android:layout_marginTop="336dp"
             android:layout_marginEnd="34dp"
-            android:layout_marginBottom="293dp"
             android:layout_toStartOf="@+id/resultadoVisitante"
             android:layout_toEndOf="@+id/resultadoLocal"
             android:text="-"
@@ -92,14 +87,32 @@
             android:layout_width="wrap_content"
             android:layout_height="27dp"
             android:layout_below="@+id/Local"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="455dp"
-            android:layout_marginBottom="111dp"
+            android:layout_marginTop="90dp"
             android:text="EMPATE ENTRE LOS DOS EQUIPOS"
             android:textSize="20sp"
             tools:context=".MainActivity"
-            android:layout_centerHorizontal="true"
-            />
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/buttonVolver"
+            android:layout_width="164dp"
+            android:layout_height="87dp"
+
+            android:layout_below="@+id/Local"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="458dp"
+            android:layout_marginBottom="48dp"
+            android:background="#E4220500"
+            android:backgroundTint="@color/black"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text="VOLVER"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:context=".MainActivity"
+            android:layout_centerHorizontal="true"/>
 
 
     </RelativeLayout>

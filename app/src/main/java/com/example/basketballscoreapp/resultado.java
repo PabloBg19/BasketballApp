@@ -1,5 +1,6 @@
 package com.example.basketballscoreapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -32,6 +33,7 @@ public class resultado extends AppCompatActivity {
 
         });
         ActualizarResultado();
+        volver();
     }
 
     private void ActualizarResultado() {
@@ -42,7 +44,6 @@ public class resultado extends AppCompatActivity {
         binding.resultadoVisitante.setText(String.valueOf(puntajeVisitante));
 
 
-
         if (puntajeLocal > puntajeVisitante) {
             binding.resultado.setText("Ganó el equipo local");
         } else if (puntajeLocal < puntajeVisitante) {
@@ -51,4 +52,17 @@ public class resultado extends AppCompatActivity {
             binding.resultado.setText("Empate");
         }
     }
+
+    private void volver() {
+        binding.buttonVolver.setOnClickListener(v -> {
+            finish();
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            startActivity(getIntent());
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        });
+
+
+    }
+
 }

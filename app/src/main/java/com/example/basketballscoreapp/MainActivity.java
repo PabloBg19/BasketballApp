@@ -121,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.buttonPasarVentana.setOnClickListener(v -> {
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             Intent intent = new Intent(this, resultado.class);  // creamos el intent y pasamos a la otra actividad
             intent.putExtra("local", local); // pasamos los datos
             intent.putExtra("visitante", visitante);
