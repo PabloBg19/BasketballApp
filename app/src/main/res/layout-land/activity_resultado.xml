@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".ResultadoActivity">
+
+        <!-- TÍTULO -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/basketabll_score"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="#E4220500" />
+
+        <!-- LOCAL - VISITANTE -->
+        <TextView
+            android:id="@+id/Local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:text="LOCAL - VISITANTE"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp" />
+
+        <!-- CONTENEDOR DE PUNTOS HORIZONTAL -->
+        <LinearLayout
+            android:id="@+id/contenedorPuntos"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Local"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:weightSum="3">
+
+            <!-- IZQUIERDA (LOCAL) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/resultadoLocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="90sp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- GUION CENTRAL -->
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="70sp"
+                android:gravity="center"
+                android:layout_marginHorizontal="30dp" />
+
+            <!-- DERECHA (VISITANTE) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/resultadoVisitante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="90sp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- MENSAJE FINAL -->
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contenedorPuntos"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="EMPATE ENTRE LOS DOS EQUIPOS"
+            android:textSize="22sp"
+            android:layout_marginTop="20dp" />
+
+        <!-- BOTÓN VOLVER (CENTRADO ABAJO) -->
+        <Button
+            android:id="@+id/buttonVolver"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="19dp"
+            android:backgroundTint="@color/black"
+            android:text="VOLVER"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</layout>

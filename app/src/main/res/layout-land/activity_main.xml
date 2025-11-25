@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/basketabll_score"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="#E4220500" />
+
+        <!-- Zona izquierda LOCAL -->
+        <TextView
+            android:id="@+id/Local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/local"
+            android:textSize="32sp" />
+
+        <!-- Botones LOCAL -->
+
+        <!-- Imagen central -->
+
+        <TextView
+            android:id="@+id/numero_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Local"
+            android:layout_alignStart="@+id/Local"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/numero_local"
+            android:textSize="120sp" />
+
+        <!-- Zona derecha VISITANTE -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numero_local"
+            android:layout_alignStart="@+id/Local"
+            android:layout_marginStart="-28dp"
+            android:layout_marginTop="-25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/boton_restar_local4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:backgroundTint="#3F3F3F"
+                android:text="-1" />
+
+            <Button
+                android:id="@+id/boton_sumar1_local"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#3F3F3F"
+                android:text="+1" />
+
+            <Button
+                android:id="@+id/boton_sumar2_local"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#3F3F3F"
+                android:text="+2" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="138dp"
+            android:layout_marginTop="107dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="105dp"
+            android:layout_toStartOf="@+id/numero_local2"
+            android:layout_toEndOf="@+id/numero_local"
+            app:srcCompat="@drawable/pngwing" />
+
+        <TextView
+            android:id="@+id/visitante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="50dp"
+            android:text="VISITANTE"
+            android:textSize="32sp" />
+
+        <!-- Botones VISITANTE -->
+
+        <!-- Botones inferiores -->
+
+        <TextView
+            android:id="@+id/numero_local2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/visitante"
+            android:layout_alignStart="@+id/visitante"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/numero_local"
+            android:textSize="120sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numero_local2"
+            android:layout_alignStart="@+id/visitante"
+            android:layout_marginStart="-68dp"
+            android:layout_marginTop="-27dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/boton_restar_visitante"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:backgroundTint="#3F3F3F"
+                android:text="-1" />
+
+            <Button
+                android:id="@+id/boton_sumar1_visitante"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#3F3F3F"
+                android:text="+1" />
+
+            <Button
+                android:id="@+id/boton_sumar2_visitante"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#3F3F3F"
+                android:text="+2" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonReiniciar"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="141dp"
+            android:layout_marginTop="57dp"
+            android:backgroundTint="#3F3F3F"
+            android:text="🔄"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonPasarVentana"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="75dp"
+            android:layout_toEndOf="@+id/buttonReiniciar"
+            android:backgroundTint="#3F3F3F"
+            android:text=">"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+</layout>
