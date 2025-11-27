@@ -68,7 +68,7 @@ Abrir en **Android Studio → Run app**.
 
 | Pantalla principal | Resultado |
 |-------------------|-----------|
-| ![Home Screen](https://via.placeholder.com/250x450?text=Pantalla+Principal) | ![Resultado Screen](https://via.placeholder.com/250x450?text=Resultado) |
+| ![Home Screen](captura1.png) | ![Resultado Screen](captura2.png) |
 
 </div>
 
