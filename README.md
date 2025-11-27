@@ -62,7 +62,16 @@ Abrir en **Android Studio → Run app**.
 
 ---
 
+## **LOGO**
+
+<div align="center">
+
+| LOGO |
+|-------------------|
+| ![Logo](logo.png) | 
+
 ## 📸 **Capturas de pantalla (Mockups)**
+
 
 <div align="center">
 
