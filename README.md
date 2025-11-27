@@ -62,7 +62,7 @@ Abrir en **Android Studio → Run app**.
 
 ---
 
-## **LOGO**
+
 
 <div align="center">
 
