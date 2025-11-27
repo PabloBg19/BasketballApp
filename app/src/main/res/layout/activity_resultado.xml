@@ -37,7 +37,7 @@
             android:layout_marginStart="4dp"
             android:layout_marginTop="46dp"
             android:gravity="center"
-            android:text="LOCAL"
+            android:text="@string/local"
             android:textColor="@color/white"
             android:textSize="30sp"
             tools:context=".MainActivity" />
@@ -51,7 +51,7 @@
             android:layout_marginTop="46dp"
             android:layout_marginEnd="3dp"
             android:gravity="center"
-            android:text="VISITANTE"
+            android:text="@string/visitante"
             android:textColor="@color/white"
             android:textSize="30sp"
             tools:context=".MainActivity" />
@@ -65,7 +65,7 @@
             android:layout_marginStart="59dp"
             android:layout_marginTop="214dp"
             android:gravity="center"
-            android:text="0"
+            android:text="@string/puntos_iniciales"
             android:textSize="90sp"
             android:textColor="@color/white"
             tools:context=".MainActivity" />
@@ -79,7 +79,7 @@
             android:layout_marginTop="215dp"
             android:layout_marginEnd="54dp"
             android:gravity="center"
-            android:text="0"
+            android:text="@string/puntos_iniciales"
             android:textSize="90sp"
             android:textColor="@color/white"
             tools:context=".MainActivity" />
@@ -94,7 +94,7 @@
             android:layout_marginEnd="34dp"
             android:layout_toStartOf="@+id/resultadoVisitante"
             android:layout_toEndOf="@+id/resultadoLocal"
-            android:text="-"
+            android:text="@string/separador_marcador"
             android:textSize="30sp"
             android:textColor="@color/white"
             tools:context=".MainActivity" />
@@ -105,7 +105,7 @@
             android:layout_height="27dp"
             android:layout_below="@+id/Local"
             android:layout_marginTop="90dp"
-            android:text="EMPATE ENTRE LOS DOS EQUIPOS"
+            android:text="@string/empate_entre_dos_equipos"
             android:textSize="20sp"
             android:textColor="@color/white"
             tools:context=".MainActivity"
@@ -125,7 +125,7 @@
             android:backgroundTint="#CCA359"
             android:elevation="10dp"
             android:gravity="center"
-            android:text="VOLVER"
+            android:text="@string/volver"
             android:textColor="@color/black"
             android:textSize="20sp"
             tools:context=".MainActivity" />

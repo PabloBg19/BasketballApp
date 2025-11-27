@@ -33,7 +33,7 @@ public class resultado extends AppCompatActivity {
             return insets;
         });
 
-        // ⬇️ Aquí cogemos los datos del intent
+        // ️ Aquí cogemos los datos del intent
         Intent intent = getIntent();
         Nlocal = intent.getStringExtra("Nlocal");
         NVisitante = intent.getStringExtra("NVisitante");

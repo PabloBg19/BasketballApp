@@ -177,7 +177,7 @@
             android:layout_marginStart="155dp"
             android:layout_marginTop="84dp"
             android:backgroundTint="#CCA359"
-            android:text="🔄"
+            android:text="@string/reiniciar"
             android:textColor="@color/black"
             android:textSize="24sp" />
 

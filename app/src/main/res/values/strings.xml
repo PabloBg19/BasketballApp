@@ -3,4 +3,16 @@
     <string name="basketabll_score">BASKETABLL SCORE</string>
     <string name="local">LOCAL</string>
     <string name="numero_local">0</string>
+    <string name="visitante">VISITANTE</string>
+    <string name="_1">-1</string>
+    <string name="__1">+1</string>
+    <string name="_2">+2</string>
+    <string name="pasarVentana"><![CDATA[>]]></string>
+    <string name="reiniciar">↻</string>
+    <string name="puntos_iniciales">0</string>
+    <string name="separador_marcador">-</string>
+    <string name="empate_entre_dos_equipos">EMPATE ENTRE LOS DOS EQUIPOS</string>
+    <string name="volver">VOLVER</string>
+
+
 </resources>
