@@ -22,7 +22,7 @@ Aplicación Android para gestionar marcadores de baloncesto
 ---
 
 ## 📄 **Descripción**
-**BasketballApp** es una aplicación Android que permite registrar puntajes entre dos equipos (Local y Visitante), mostrar quién fue el ganador o si hubo un empate, y visualizar la información en una pantalla dinámica usando **ViewBinding**.
+**BasketballApp** es una aplicación Android que permite registrar puntajes entre dos equipos (Local y Visitante), mostrar quién fue el ganador o si hubo un empate, y visualizar la información en una pantalla dinámica usando **DataBinding**.
 
 Es ideal para:
 - Aprender Android desde cero 🧑‍💻  
@@ -38,7 +38,7 @@ Es ideal para:
 - 🏆 Pantalla de resultado indicando ganador  
 - 🔄 Botón para volver a jugar  
 - 🧩 Vista moderna y responsive (EdgeToEdge + Insets)  
-- 🧼 Código limpio usando ViewBinding  
+- 🧼 Código limpio usando DataBinding  
 
 ---
 
@@ -56,7 +56,7 @@ Abrir en **Android Studio → Run app**.
 ## 🧰 **Tecnologías**
 - Java  
 - AndroidX  
-- ViewBinding  
+- DataBinding  
 - EdgeToEdge API  
 - Material Components  
 
