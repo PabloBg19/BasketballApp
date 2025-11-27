@@ -8,21 +8,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:background="@color/black">
 
         <!-- Título -->
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
+            android:layout_width="694dp"
             android:layout_height="45dp"
+            android:background="#CCA359"
             android:gravity="center"
             android:text="@string/basketabll_score"
             android:textColor="@color/white"
-            android:textSize="20sp"
-            android:background="#E4220500" />
+            android:textSize="20sp" />
 
         <!-- Zona izquierda LOCAL -->
-        <TextView
+        <EditText
             android:id="@+id/Local"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,13 +31,12 @@
             android:layout_alignParentStart="true"
             android:layout_marginStart="40dp"
             android:layout_marginTop="50dp"
-            android:text="@string/local"
+            android:hint="@string/local"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/white"
             android:textSize="32sp" />
 
-        <!-- Botones LOCAL -->
-
-        <!-- Imagen central -->
-
+        <!-- Marcador LOCAL -->
         <TextView
             android:id="@+id/numero_local"
             android:layout_width="wrap_content"
@@ -46,43 +46,47 @@
             android:layout_marginStart="23dp"
             android:layout_marginTop="10dp"
             android:text="@string/numero_local"
-            android:textSize="120sp" />
+            android:textSize="120sp"
+            android:textColor="@color/white"/>
 
-        <!-- Zona derecha VISITANTE -->
-
+        <!-- Botones LOCAL -->
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="253dp"
+            android:layout_height="66dp"
             android:layout_below="@+id/numero_local"
-            android:layout_alignStart="@+id/Local"
-            android:layout_marginStart="-28dp"
-            android:layout_marginTop="-25dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="-20dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/boton_restar_local4"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:backgroundTint="#3F3F3F"
-                android:text="-1" />
+                android:backgroundTint="#CCA359"
+                android:text="-1"
+                android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/boton_sumar1_local"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="20dp"
-                android:backgroundTint="#3F3F3F"
-                android:text="+1" />
+                android:backgroundTint="#CCA359"
+                android:text="+1"
+                android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/boton_sumar2_local"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="20dp"
-                android:backgroundTint="#3F3F3F"
-                android:text="+2" />
+                android:backgroundTint="#CCA359"
+                android:text="+2"
+                android:textColor="@color/black" />
         </LinearLayout>
 
+        <!-- Imagen central -->
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="171dp"
@@ -97,7 +101,8 @@
             android:layout_toEndOf="@+id/numero_local"
             app:srcCompat="@drawable/pngwing" />
 
-        <TextView
+        <!-- Zona derecha VISITANTE -->
+        <EditText
             android:id="@+id/visitante"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -105,13 +110,12 @@
             android:layout_marginEnd="40dp"
             android:layout_below="@+id/textView"
             android:layout_marginTop="50dp"
-            android:text="VISITANTE"
+            android:textColorHint="@color/hint"
+            android:hint="VISITANTE"
+            android:textColor="@color/white"
             android:textSize="32sp" />
 
-        <!-- Botones VISITANTE -->
-
-        <!-- Botones inferiores -->
-
+        <!-- Marcador VISITANTE -->
         <TextView
             android:id="@+id/numero_local2"
             android:layout_width="wrap_content"
@@ -121,63 +125,74 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="5dp"
             android:text="@string/numero_local"
-            android:textSize="120sp" />
+            android:textSize="120sp"
+            android:textColor="@color/white" />
 
+        <!-- Botones VISITANTE -->
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="265dp"
+            android:layout_height="71dp"
             android:layout_below="@+id/numero_local2"
             android:layout_alignStart="@+id/visitante"
-            android:layout_marginStart="-68dp"
-            android:layout_marginTop="-27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-65dp"
+            android:layout_marginTop="-16dp"
+            android:layout_marginEnd="10dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/boton_restar_visitante"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:backgroundTint="#3F3F3F"
-                android:text="-1" />
+                android:backgroundTint="#CCA359"
+                android:text="-1"
+                android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/boton_sumar1_visitante"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="20dp"
-                android:backgroundTint="#3F3F3F"
-                android:text="+1" />
+                android:backgroundTint="#CCA359"
+                android:text="+1"
+                android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/boton_sumar2_visitante"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="20dp"
-                android:backgroundTint="#3F3F3F"
-                android:text="+2" />
+                android:backgroundTint="#CCA359"
+                android:text="+2"
+                android:textColor="@color/black" />
         </LinearLayout>
 
+        <!-- Botón Reiniciar -->
         <Button
             android:id="@+id/buttonReiniciar"
             android:layout_width="166dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="141dp"
-            android:layout_marginTop="57dp"
-            android:backgroundTint="#3F3F3F"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="84dp"
+            android:backgroundTint="#CCA359"
             android:text="🔄"
+            android:textColor="@color/black"
             android:textSize="24sp" />
 
+        <!-- Botón Pasar Ventana -->
         <Button
             android:id="@+id/buttonPasarVentana"
             android:layout_width="155dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="66dp"
-            android:layout_marginTop="75dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="86dp"
             android:layout_toEndOf="@+id/buttonReiniciar"
-            android:backgroundTint="#3F3F3F"
+            android:backgroundTint="#CCA359"
             android:text=">"
+            android:textColor="@color/black"
             android:textSize="24sp" />
 
     </RelativeLayout>

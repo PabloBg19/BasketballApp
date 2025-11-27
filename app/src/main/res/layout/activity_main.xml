@@ -12,10 +12,10 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:background="@color/black">
 
-
-        <TextView
+        <EditText
             android:id="@+id/visitante"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,8 +26,10 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="-2dp"
             android:gravity="center"
-            android:text="VISITANTE"
+            android:hint="VISITANTE"
+            android:textColorHint="@color/hint"
             android:textSize="30sp"
+            android:textColor="@color/white"
             tools:context=".MainActivity" />
 
         <TextView
@@ -35,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="51dp"
             android:layout_centerHorizontal="true"
-            android:background="#E4220500"
+            android:background="#CCA359"
             android:text="@string/basketabll_score"
             android:textColor="@color/white"
             android:visibility="visible"
@@ -43,7 +45,7 @@
             android:gravity="center"
             tools:context=".MainActivity"/>
 
-        <TextView
+        <EditText
             android:id="@+id/Local"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,10 +53,12 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="46dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="-4dp"
             android:gravity="center"
-            android:text="@string/local"
+            android:hint="@string/local"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint"
             android:textSize="30sp"
             tools:context=".MainActivity" />
 
@@ -69,6 +73,7 @@
             android:rotationX="2"
             android:text="@string/numero_local"
             android:textSize="100sp"
+            android:textColor="@color/white"
             android:visibility="visible"
             tools:context=".MainActivity" />
 
@@ -83,6 +88,7 @@
             android:rotationX="2"
             android:text="@string/numero_local"
             android:textSize="100sp"
+            android:textColor="@color/white"
             android:visibility="visible"
             tools:context=".MainActivity" />
 
@@ -96,9 +102,10 @@
             android:layout_marginTop="93dp"
             android:layout_marginEnd="57dp"
             android:layout_toStartOf="@+id/numero_local"
-            android:backgroundTint="#3F3F3F"
+            android:backgroundTint="#CCA359"
             android:text="-1"
             android:textSize="16sp"
+            android:textColor="@color/black"
             android:visibility="visible"
             tools:context=".MainActivity" />
 
@@ -112,9 +119,10 @@
             android:layout_marginTop="94dp"
             android:layout_marginEnd="48dp"
             android:layout_toStartOf="@+id/numero_local"
-            android:backgroundTint="#3F3F3F"
+            android:backgroundTint="#CCA359"
             android:text="-1"
             android:textSize="16sp"
+            android:textColor="@color/black"
             android:visibility="visible"
             tools:context=".MainActivity" />
 
@@ -128,9 +136,10 @@
             android:layout_marginTop="49dp"
             android:layout_marginEnd="43dp"
             android:layout_toEndOf="@+id/numero_local"
-            android:backgroundTint="#3F3F3F"
+            android:backgroundTint="#CCA359"
             android:text="+1"
             android:textSize="16sp"
+            android:textColor="@color/black"
             android:visibility="visible"
             tools:context=".MainActivity" />
 
@@ -144,9 +153,10 @@
             android:layout_marginTop="53dp"
             android:layout_marginEnd="43dp"
             android:layout_toEndOf="@+id/numero_local"
-            android:backgroundTint="#3F3F3F"
+            android:backgroundTint="#CCA359"
             android:text="+1"
             android:textSize="16sp"
+            android:textColor="@color/black"
             android:visibility="visible"
             tools:context=".MainActivity" />
 
@@ -160,9 +170,10 @@
             android:layout_marginTop="35dp"
             android:layout_marginEnd="43dp"
             android:layout_toEndOf="@+id/numero_local"
-            android:backgroundTint="#3F3F3F"
+            android:backgroundTint="#CCA359"
             android:text="+2"
             android:textSize="16sp"
+            android:textColor="@color/black"
             android:visibility="visible"
             tools:context=".MainActivity" />
 
@@ -176,9 +187,10 @@
             android:layout_marginTop="35dp"
             android:layout_marginEnd="43dp"
             android:layout_toEndOf="@+id/numero_local"
-            android:backgroundTint="#3F3F3F"
+            android:backgroundTint="#CCA359"
             android:text="+2"
             android:textSize="16sp"
+            android:textColor="@color/black"
             android:visibility="visible"
             tools:context=".MainActivity" />
 
@@ -188,7 +200,6 @@
             android:layout_height="112dp"
             android:layout_below="@+id/numero_local"
             android:layout_marginTop="58dp"
-
             app:srcCompat="@drawable/pngwing"
             tools:context=".MainActivity"
             android:layout_centerHorizontal="true"/>
@@ -203,11 +214,11 @@
             android:layout_marginTop="44dp"
             android:layout_marginEnd="24dp"
             android:layout_toEndOf="@+id/imageView2"
-            android:background="@drawable/boton_cuadrado"
 
-            android:backgroundTint="#3F3F3F"
+            android:backgroundTint="#CCA359"
             android:text=">"
             android:textColorLink="#000000"
+            android:textColor="@color/black"
             android:textSize="22sp" />
 
         <Button
@@ -220,17 +231,18 @@
             android:layout_marginTop="93dp"
             android:layout_marginEnd="27dp"
             android:layout_toStartOf="@+id/imageView2"
-            android:background="@drawable/boton_cuadrado"
-            android:backgroundTint="#3F3F3F"
+
+            android:backgroundTint="#CCA359"
             android:text="🔄"
             android:textColorLink="#000000"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:visibility="visible"
             tools:context=".MainActivity"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:layout_centerInParent="true"
-            />
+            android:layout_centerInParent="true" />
+
 
 
     </RelativeLayout>

@@ -16,8 +16,11 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding; // <- declaramos el binding
     private int local = 0; // <- declaramos las variables
-    private int visitante = 0; // <- declaramos las variables
+    private int visitante = 0;
 
+    private String Nlocal;
+
+    private String NVisitante;
 
 
     @Override
@@ -34,10 +37,6 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
-
-
-
-
 
         });
 
@@ -121,10 +120,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.buttonPasarVentana.setOnClickListener(v -> {
+            binding.Local.getText().toString();
+            binding.visitante.getText().toString();
+            Nlocal = binding.Local.getText().toString();
+            NVisitante = binding.visitante.getText().toString();
+
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             Intent intent = new Intent(this, resultado.class);  // creamos el intent y pasamos a la otra actividad
             intent.putExtra("local", local); // pasamos los datos
             intent.putExtra("visitante", visitante);
+            intent.putExtra("Nlocal", Nlocal);
+            intent.putExtra("NVisitante", NVisitante);
+
             startActivity(intent);
         });
 
