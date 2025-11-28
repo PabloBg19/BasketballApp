@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal">
 
+    <!-- Sección usada por ViewBinding -->
     <data>
 
     </data>
 
+    <!-- Layout principal donde se colocan todos los elementos -->
     <RelativeLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
@@ -15,6 +17,7 @@
         tools:context=".MainActivity"
         android:background="@color/black">
 
+        <!-- Barra superior con el título "Basketball Score" -->
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -23,11 +26,10 @@
             android:background="#CCA359"
             android:text="@string/basketabll_score"
             android:textColor="@color/white"
-            android:visibility="visible"
             android:textSize="16sp"
-            android:gravity="center"
-            tools:context=".MainActivity"/>
+            android:gravity="center" />
 
+        <!-- Nombre del equipo local -->
         <TextView
             android:id="@+id/Local"
             android:layout_width="201dp"
@@ -39,9 +41,9 @@
             android:gravity="center"
             android:text="@string/local"
             android:textColor="@color/white"
-            android:textSize="30sp"
-            tools:context=".MainActivity" />
+            android:textSize="30sp" />
 
+        <!-- Nombre del equipo visitante -->
         <TextView
             android:id="@+id/Visitante"
             android:layout_width="201dp"
@@ -53,9 +55,9 @@
             android:gravity="center"
             android:text="@string/visitante"
             android:textColor="@color/white"
-            android:textSize="30sp"
-            tools:context=".MainActivity" />
+            android:textSize="30sp" />
 
+        <!-- Puntuación final del equipo local -->
         <TextView
             android:id="@+id/resultadoLocal"
             android:layout_width="122dp"
@@ -67,9 +69,9 @@
             android:gravity="center"
             android:text="@string/puntos_iniciales"
             android:textSize="90sp"
-            android:textColor="@color/white"
-            tools:context=".MainActivity" />
+            android:textColor="@color/white" />
 
+        <!-- Puntuación final del equipo visitante -->
         <TextView
             android:id="@+id/resultadoVisitante"
             android:layout_width="106dp"
@@ -81,9 +83,9 @@
             android:gravity="center"
             android:text="@string/puntos_iniciales"
             android:textSize="90sp"
-            android:textColor="@color/white"
-            tools:context=".MainActivity" />
+            android:textColor="@color/white" />
 
+        <!-- Separador visual (el guion que aparece entre los dos marcadores) -->
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
@@ -96,39 +98,35 @@
             android:layout_toEndOf="@+id/resultadoLocal"
             android:text="@string/separador_marcador"
             android:textSize="30sp"
-            android:textColor="@color/white"
-            tools:context=".MainActivity" />
+            android:textColor="@color/white" />
 
+        <!-- Texto que indica quién ganó o si empataron -->
         <TextView
             android:id="@+id/resultado"
             android:layout_width="wrap_content"
             android:layout_height="27dp"
             android:layout_below="@+id/Local"
             android:layout_marginTop="90dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
             android:text="@string/empate_entre_dos_equipos"
             android:textSize="20sp"
-            android:textColor="@color/white"
-            tools:context=".MainActivity"
-            android:gravity="center"
-            android:layout_centerHorizontal="true"/>
+            android:textColor="@color/white" />
 
+        <!-- Botón para volver a la pantalla principal -->
         <Button
             android:id="@+id/buttonVolver"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:layout_below="@+id/Local"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="444dp"
             android:layout_marginBottom="49dp"
             android:backgroundTint="#CCA359"
             android:elevation="10dp"
             android:gravity="center"
             android:text="@string/volver"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            tools:context=".MainActivity" />
+            android:textSize="20sp" />
 
     </RelativeLayout>
 </layout>

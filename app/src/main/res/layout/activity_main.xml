@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal">
 
+    <!-- Contenedor de datos usado por ViewBinding -->
     <data>
 
     </data>
 
+    <!-- Layout principal de la pantalla -->
     <RelativeLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
@@ -15,6 +17,7 @@
         tools:context=".MainActivity"
         android:background="@color/black">
 
+        <!-- Campo donde se escribe el nombre del visitante -->
         <EditText
             android:id="@+id/visitante"
             android:layout_width="match_parent"
@@ -32,6 +35,7 @@
             android:textColor="@color/white"
             tools:context=".MainActivity" />
 
+        <!-- Encabezado del marcador -->
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -40,11 +44,11 @@
             android:background="#CCA359"
             android:text="@string/basketabll_score"
             android:textColor="@color/white"
-            android:visibility="visible"
             android:textSize="16sp"
             android:gravity="center"
-            tools:context=".MainActivity"/>
+            tools:context=".MainActivity" />
 
+        <!-- Campo donde se escribe el nombre del equipo local -->
         <EditText
             android:id="@+id/Local"
             android:layout_width="match_parent"
@@ -62,6 +66,7 @@
             android:textSize="30sp"
             tools:context=".MainActivity" />
 
+        <!-- Marcador del equipo local -->
         <TextView
             android:id="@+id/numero_local"
             android:layout_width="114dp"
@@ -70,13 +75,12 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
             android:gravity="center"
-            android:rotationX="2"
             android:text="@string/numero_local"
             android:textSize="100sp"
             android:textColor="@color/white"
-            android:visibility="visible"
             tools:context=".MainActivity" />
 
+        <!-- Marcador del equipo visitante -->
         <TextView
             android:id="@+id/numero_local2"
             android:layout_width="117dp"
@@ -85,13 +89,12 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="44dp"
             android:gravity="center"
-            android:rotationX="2"
             android:text="@string/numero_local"
             android:textSize="100sp"
             android:textColor="@color/white"
-            android:visibility="visible"
             tools:context=".MainActivity" />
 
+        <!-- Botón restar puntos visitante -->
         <Button
             android:id="@+id/boton_restar_visitante"
             android:layout_width="72dp"
@@ -100,15 +103,13 @@
             android:layout_alignParentStart="true"
             android:layout_marginStart="19dp"
             android:layout_marginTop="93dp"
-            android:layout_marginEnd="57dp"
             android:layout_toStartOf="@+id/numero_local"
             android:backgroundTint="#CCA359"
             android:text="@string/_1"
             android:textSize="16sp"
-            android:textColor="@color/black"
-            android:visibility="visible"
-            tools:context=".MainActivity" />
+            android:textColor="@color/black" />
 
+        <!-- Botón restar puntos local -->
         <Button
             android:id="@+id/boton_restar_local4"
             android:layout_width="80dp"
@@ -117,131 +118,105 @@
             android:layout_alignParentStart="true"
             android:layout_marginStart="21dp"
             android:layout_marginTop="94dp"
-            android:layout_marginEnd="48dp"
             android:layout_toStartOf="@+id/numero_local"
             android:backgroundTint="#CCA359"
             android:text="@string/_1"
             android:textSize="16sp"
-            android:textColor="@color/black"
-            android:visibility="visible"
-            tools:context=".MainActivity" />
+            android:textColor="@color/black" />
 
+        <!-- Botón sumar 1 punto local -->
         <Button
             android:id="@+id/boton_sumar1_local"
             android:layout_width="71dp"
             android:layout_height="66dp"
             android:layout_below="@+id/Local"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="35dp"
             android:layout_marginTop="49dp"
-            android:layout_marginEnd="43dp"
             android:layout_toEndOf="@+id/numero_local"
             android:backgroundTint="#CCA359"
             android:text="@string/__1"
             android:textSize="16sp"
-            android:textColor="@color/black"
-            android:visibility="visible"
-            tools:context=".MainActivity" />
+            android:textColor="@color/black" />
 
+        <!-- Botón sumar 1 punto visitante -->
         <Button
             android:id="@+id/boton_sumar1_visitante"
             android:layout_width="75dp"
             android:layout_height="62dp"
             android:layout_below="@+id/imageView2"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="31dp"
             android:layout_marginTop="53dp"
-            android:layout_marginEnd="43dp"
             android:layout_toEndOf="@+id/numero_local"
             android:backgroundTint="#CCA359"
             android:text="@string/__1"
             android:textSize="16sp"
-            android:textColor="@color/black"
-            android:visibility="visible"
-            tools:context=".MainActivity" />
+            android:textColor="@color/black" />
 
+        <!-- Botón sumar 2 puntos local -->
         <Button
             android:id="@+id/boton_sumar2_local"
             android:layout_width="69dp"
             android:layout_height="68dp"
             android:layout_below="@+id/boton_sumar1_local"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="36dp"
             android:layout_marginTop="35dp"
-            android:layout_marginEnd="43dp"
             android:layout_toEndOf="@+id/numero_local"
             android:backgroundTint="#CCA359"
             android:text="@string/_2"
             android:textSize="16sp"
-            android:textColor="@color/black"
-            android:visibility="visible"
-            tools:context=".MainActivity" />
+            android:textColor="@color/black" />
 
+        <!-- Botón sumar 2 puntos visitante -->
         <Button
             android:id="@+id/boton_sumar2_visitante"
             android:layout_width="70dp"
             android:layout_height="59dp"
             android:layout_below="@+id/boton_sumar1_visitante"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="35dp"
             android:layout_marginTop="35dp"
-            android:layout_marginEnd="43dp"
             android:layout_toEndOf="@+id/numero_local"
             android:backgroundTint="#CCA359"
             android:text="@string/_2"
             android:textSize="16sp"
-            android:textColor="@color/black"
-            android:visibility="visible"
-            tools:context=".MainActivity" />
+            android:textColor="@color/black" />
 
+        <!-- Imagen decorativa central (balón de basket o logo) -->
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="140dp"
             android:layout_height="112dp"
             android:layout_below="@+id/numero_local"
             android:layout_marginTop="58dp"
-            app:srcCompat="@drawable/pngwing"
-            tools:context=".MainActivity"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/pngwing" />
 
+        <!-- Botón para pasar a la pantalla de resultados -->
         <Button
             android:id="@+id/buttonPasarVentana"
             android:layout_width="96dp"
             android:layout_height="73dp"
             android:layout_below="@+id/boton_sumar2_local"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="15dp"
             android:layout_marginTop="49dp"
-            android:layout_marginEnd="24dp"
             android:layout_toEndOf="@+id/imageView2"
-
             android:backgroundTint="#CCA359"
             android:text="@string/pasarVentana"
             android:textColor="@color/black"
-            android:textColorLink="#000000"
             android:textSize="34sp" />
 
+        <!-- Botón para reiniciar marcador -->
         <Button
             android:id="@+id/buttonReiniciar"
             android:layout_width="100dp"
             android:layout_height="73dp"
             android:layout_below="@+id/boton_restar_local4"
-            android:layout_alignParentStart="true"
             android:layout_centerInParent="true"
-            android:layout_marginStart="22dp"
             android:layout_marginTop="99dp"
-            android:layout_marginEnd="14dp"
             android:layout_toStartOf="@+id/imageView2"
-            android:layout_toEndOf="@+id/numero_local"
             android:backgroundTint="#CCA359"
-            android:gravity="center"
             android:text="@string/reiniciar"
             android:textColor="@color/black"
-            android:textColorLink="#000000"
-            android:textSize="34sp"
-            android:visibility="visible"
-            tools:context=".MainActivity" />
-
+            android:textSize="34sp" />
 
     </RelativeLayout>
 </layout>
