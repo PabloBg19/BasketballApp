@@ -77,7 +77,7 @@ Abrir en **Android Studio → Run app**.
 
 | Pantalla principal | Resultado |
 |-------------------|-----------|
-| ![Home Screen](captura1.png) | ![Resultado Screen](captura2.png) |
+| ![Home Screen](ventana1.png) | ![Resultado Screen](ventana2.png) |
 
 </div>
 
